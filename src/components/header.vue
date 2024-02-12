@@ -22,13 +22,13 @@ div{
   display: block;
 }
 header{
-  background-color: aqua;
+  background-color: grey;
   
 }
   nav{
     height:80px;
     width: 100%;
-    background-color: red;
+    background-color: royalblue;
   }
 
   nav ul{
