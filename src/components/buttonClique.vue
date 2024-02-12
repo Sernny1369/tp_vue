@@ -13,7 +13,7 @@ export default {
 
 <style>
 button {
-  color: #fff;
+  color: #000;
   background: linear-gradient(315deg, #42d392 25%, #647eff);
   border: none;
   padding: 5px 10px;
