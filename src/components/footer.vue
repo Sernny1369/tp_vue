@@ -14,9 +14,12 @@
      <style>
      footer {
       text-align: center;
-      padding: 5px;
-      background-color: #abbaba;
-      color: #000;
+      padding: 10px;
+      background-color: #grey;
+      color: #white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
     
      </style>
