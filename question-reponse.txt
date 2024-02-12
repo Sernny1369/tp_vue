@@ -1,0 +1,34 @@
+Question 1
+des paquets locaux sont installés dans le répertoire dans le dossier node modules
+tous les colis devraient être installés localement
+
+question 2
+webpack aide à héberger tous les composants Vue 
+
+question 3
+
+permet durant le développement d'utiliser les dernières fonctionnalités dans la syntaxe
+permet que le code sois compris par le plus de navigateur
+
+
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+
+
+question 4
+permet aussi d'uniformiser la codebase, surtout si plusieurs développeurs travaillent sur le même projet
+
+question 5
+ les styles de la composante parent ne s'éteindront pas dans les composants enfants
