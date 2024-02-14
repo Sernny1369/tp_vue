@@ -4,8 +4,13 @@
     <base-layout>
       <home-page />
     </base-layout>
-    <base-button>Click me</base-button>
-    <base-button disabled>Click me</base-button>
+    <async-button >TEST</async-button>
+    <sign-in-button />
+    <base-button class="button">Base Boutton</base-button>
+    <base-button class="disabled" disabled>Base Boutton disable</base-button>
+    <base-button class="primary">Base Boutton </base-button>
+    <base-button class="warn">Base Boutton</base-button>
+    <base-button class="danger">Base Boutton</base-button>
     <base-footer/>
   </div>
 
@@ -18,6 +23,9 @@ import BaseHeader from './components/header.vue'
 import BaseFooter from './components/footer.vue'
 import BaseLayout from './components/layout.vue'
 import BaseButton from './components/buttonClique.vue'
+import AsyncButton from './components/asyncBoutton.vue'
+import SignInButton from './components/signiButton.vue'
+
 
 export default {
   name: 'App',
@@ -26,7 +34,10 @@ export default {
     HomePage,
     BaseLayout,
     BaseFooter,
-    BaseButton
+    AsyncButton,
+    BaseButton,
+    SignInButton
   }
 }
 </script>
+
