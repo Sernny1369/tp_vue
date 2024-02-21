@@ -1,43 +1,44 @@
 <template>
-  <div>
-    <base-header/>
-    <base-layout>
-      <home-page />
-    </base-layout>
-    <async-button >TEST</async-button>
-    <sign-in-button />
-    <base-button class="button">Base Boutton</base-button>
-    <base-button class="disabled" disabled>Base Boutton disable</base-button>
-    <base-button class="primary">Base Boutton </base-button>
-    <base-button class="warn">Base Boutton</base-button>
-    <base-button class="danger">Base Boutton</base-button>
-    <base-footer/>
-  </div>
-
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> |
+    <router-link to="/france">Fr</router-link> |
+    <router-link to="/allemagne">Al</router-link> |
+    <signiButton />
+  </nav>
+  <router-view/>
 </template>
 
 <script>
 
-import HomePage from './pages/HomePage.vue'
-import BaseHeader from './components/header.vue'
-import BaseFooter from './components/footer.vue'
-import BaseLayout from './components/layout.vue'
-import BaseButton from './components/buttonClique.vue'
-import AsyncButton from './components/asyncBoutton.vue'
-import SignInButton from './components/signiButton.vue'
+import signiButton from './components/signiButton.vue';
 
-
-export default {
-  name: 'App',
-  components: {
-    BaseHeader,
-    HomePage,
-    BaseLayout,
-    BaseFooter,
-    AsyncButton,
-    BaseButton,
-    SignInButton
+export default{
+  components:{
+    signiButton,
   }
 }
 </script>
 
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
+}
+</style>
