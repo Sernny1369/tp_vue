@@ -14,7 +14,7 @@ export default {
 
 <style scoped>
 .home-page {
-  max-width: 500px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
