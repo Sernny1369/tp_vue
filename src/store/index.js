@@ -1,12 +1,19 @@
+//import { forEach } from 'core-js/core/dict';
 import {createStore} from 'vuex'
 
 
 export default createStore({
   state: {
-    usernom:null,
+    usernom:'',
     firstname:'dit',
     lastname:'mec',
-    nbMess:10
+    nbMess:1,
+
+    messages:{
+    destinataire :"",
+    objet: "",
+    contenue:"",
+    },
   },
   getters: {
     fullName: function(state){
@@ -14,6 +21,12 @@ export default createStore({
     },
 
     Name: function(state){
+      
+      return state.usernom
+
+    },
+
+    allMessage: function(state){
       return state.usernom
 
     }
@@ -21,7 +34,8 @@ export default createStore({
   mutations: {
     connect: function(state,username){
       state.usernom= username
-}
+},
+
 
   },
   actions: {

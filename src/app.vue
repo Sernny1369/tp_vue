@@ -1,21 +1,26 @@
-<template>
+<template id="page">
+  <div id="page">
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/france">Fr</router-link> |
-    <router-link to="/allemagne">Al</router-link> |
+    <router-link to="/conversation" v-if="$store.usernom==null"> </router-link>
     <signiButton />
   </nav>
   <router-view/>
+<BaseFooter />
+  </div>
 </template>
 
 <script>
 
 import signiButton from './components/signiButton.vue';
+import BaseFooter from './components/footer.vue';
 
 export default{
   components:{
     signiButton,
+    BaseFooter,
+    LogoutButton,
   }
 }
 </script>
@@ -27,6 +32,11 @@ export default{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+#page {
+  background: #021634;
+  color:#e7ae2f;
 }
 
 nav {

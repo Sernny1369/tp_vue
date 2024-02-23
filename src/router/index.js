@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import TheAllemagne from '../pages/Allemagne'
-import TheFrance from '../pages/France'
+import MesConversation from '../pages/Conversation'
+
 
 const routes = [
   {
@@ -10,16 +10,12 @@ const routes = [
     component: HomeView
   },
 
-  {
-    path: '/france',
-    name: 'france',
-    component: TheFrance
+    {
+    path: '/conversation',
+    name: 'conversation',
+    component: MesConversation
   },
-  {
-    path: '/allemagne',
-    name: 'allemagne',
-    component: TheAllemagne
-  },
+
   {
     path: '/about',
     name: 'about',

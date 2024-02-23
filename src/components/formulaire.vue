@@ -44,6 +44,7 @@
 
 <script>
 export default {
+  name:'LeFormulaire',
   data() {
     return {
       recipient: '',
