@@ -7,10 +7,9 @@ project fait part Sergio-Leon OSIAS et Sami AMOKRANE
 
 - [Installation](#installation)
 - [Configuration](#configuration)
-- [Utilisation](#utilisation)
+- [Demarage](#Demarage)
 - [Fonctionnalités](#fonctionnalités)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
+
 
 ## Installation
 
@@ -46,9 +45,6 @@ project fait part Sergio-Leon OSIAS et Sami AMOKRANE
     ```bash
     yarn install
     ```
-## Utilisation
-
-Expliquez comment utiliser votre projet après l'installation. Par exemple, comment démarrer le serveur de développement, les commandes disponibles, etc.
 
 ### Démarrer le projet
 
